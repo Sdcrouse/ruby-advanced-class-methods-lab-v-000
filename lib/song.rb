@@ -46,7 +46,15 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    song = filename.chomp(".mp3")
+    parsed_song = filename.chomp(".mp3").split(" - ")
+    artist = parsed_song[0]
+    name = parsed_song[1]
     
+    
+  end
+  
+  def add_artist_and_name(artist, name)
+    self.name = name 
+    self.artist_name = artist
   end
 end
