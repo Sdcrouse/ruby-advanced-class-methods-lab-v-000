@@ -12,8 +12,9 @@ class Song
 
   def self.create
     song = self.new 
-    #self.all << song # or 
-    song.save 
+    self.all << song 
+    # or song.save, but the code above is arguably better.
+    # The song shouldn't save itself into @@all; the Song class should save the song into @@all.
     song
   end 
 end
