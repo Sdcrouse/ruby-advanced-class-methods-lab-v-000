@@ -46,6 +46,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
+    song = filename.chomp(".mp3")
     
   end
 end
