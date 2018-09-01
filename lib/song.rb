@@ -54,7 +54,7 @@ class Song
   end
   
   def add_artist_and_name(artist, name)
-    self.name = name 
     self.artist_name = artist
+    
   end
 end
