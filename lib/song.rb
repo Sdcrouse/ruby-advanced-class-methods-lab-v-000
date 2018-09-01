@@ -45,16 +45,17 @@ class Song
     self.all.sort_by{|song| song.name}
   end
   
-  def self.new_from_filename(filename)
+  def self.new_from_filename(filename) # Refactor this!
     parsed_song = filename.chomp(".mp3").split(" - ")
     artist = parsed_song[0]
     name = parsed_song[1]
-    
-    
+    song = self.new 
+    song.add_artist_and_name(artist, name)
+    song
   end
   
   def add_artist_and_name(artist, name)
     self.artist_name = artist
-    
+    self.name = name 
   end
 end
