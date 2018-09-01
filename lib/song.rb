@@ -16,6 +16,9 @@ class Song
     # or song.save, but the code above is arguably better.
     # The song shouldn't save itself into @@all; the Song class should save the song into @@all.
     # However, it could also be argued that song.save is more elegant!
+    
     song
   end 
+  
+  
 end
