@@ -15,7 +15,7 @@ class Song
     self.all << song 
     # or song.save, but the code above is arguably better.
     # The song shouldn't save itself into @@all; the Song class should save the song into @@all.
-    # However, it could also be argued that song.save is more elegant!
+    # However, it could also be argued that song.save is more elegant and abstract!
     
     song
   end 
